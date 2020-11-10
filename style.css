@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.box {
+    height: 300px;
+    width: 300px;
+
+    background-color: #eee;
+    border: 1px solid black;
+
+    position: relative;
+}
+
+input {
+    width: 72px;
+    height: 32px;
+    text-align: center;
+
+    padding: 6px;
+}
+
+input::placeholder {
+    font-size: 10px;
+    text-align: center;
+}
+
+input:focus {
+    text-align: center;
+    border: none;
+    outline: 1px solid rgb(97, 201, 115);
+}
+
+.absolute {
+    position: absolute;
+}
+
+.top-left {
+    left: -80px;
+    top: 0;
+}
+
+.top-right {
+    right: -80px;
+    top: 0;
+}
+
+.bottom-right {
+    right: -80px;
+    bottom: 0;
+}
+
+.bottom-left {
+    left: -80px;
+    bottom: 0;
+}
+
+button{
+    margin-top: 48px;
+    color: white;
+
+    font-size: 18px;
+
+    border-radius: 8px;
+
+    border: none;
+    padding: 16px 32px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+
+    cursor: pointer;
+}
+
+button.copy {
+    background-color: rgb(224, 224, 62);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.copy i {
+    font-size: 18px;
+
+    margin-left: 6px;
+}
+
+small {
+    visibility: hidden;
+
+    font-size: 14px;
+    color: rgb(99, 192, 99);
+
+    transform: translate3d(0, 0, 0);
+    transition: all 0.3s ease-out;
+}
+
+small.show {
+    visibility: visible;
+    transform: translate3d(0, 8px, 0);
+}
